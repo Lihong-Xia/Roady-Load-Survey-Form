@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    min-height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    background-image: url(images/Car.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: fixed;
+}
+
+/*head*/
+h1 {
+    font-size: 40px;
+    margin: 64px auto 0 auto;
+    text-align: center;
+}
+span {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 48px;
+    color: #499167;
+}
+#description {
+    font-size: 22px;
+    font-style: italic;
+    margin: 24px auto;
+    text-align: center;
+}
+
+/* form */
+form {
+    width: 60vw;
+    min-width: 300px;
+    max-width: 900px;
+    margin: 64px auto;
+}
+
+label, p {
+    display: block;
+    width: 100%;
+    margin-bottom: 8px;
+    margin-top: 24px;
+}
+
+input, select, textarea {
+    display: block;
+    width: 100%;
+    height: 48px;
+    font-size: 16px;
+    padding: 8px;
+    margin-bottom: 24px;
+    border-radius: 8px;
+    border: 1px solid #000000;
+    color: rgba(0, 0, 0, 0.65);
+}
+
+/*radio*/
+input[type="radio"] {
+    appearance: none;
+    display: inline-block;
+    margin: 16px 8px 0 0;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: no-repeat url(images/radio-unselected.png) center;
+    /* padding: 0; */
+    border: none;
+}
+input[type="radio"]:checked {
+    background: no-repeat url(images/radio-selected.png) center;
+    margin: 16px 8px 0 0;
+    /* padding: 0; */
+    width: 24px;
+    height: 24px;
+    border: none;
+    border-radius: 50%;
+}
+
+/*checkbox*/
+input[type="checkbox"] {
+    appearance: none; 
+    display: inline-block;
+    margin: 16px 8px 0 0;
+    width: 24px;
+    height: 24px;
+    border-radius: 0%;
+    background: no-repeat url(images/checkbox-unchecked.png) center;
+    border: none;
+}
+input[type="checkbox"]:checked {
+    background: no-repeat url(images/checkbox-checked.png) center;
+    margin: 16px 8px 0 0;
+    width: 24px;
+    height: 24px;
+    border: none;
+    border-radius: 0%;
+}
+
+.radio-checkbox label {
+    display: inline-block;
+    width: auto;
+    vertical-align: top;
+    margin-top: 16px;
+}
+
+textarea {
+    min-height: 150px;
+    padding: 12px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+
+input[type="submit"] {
+    background-color: #499167;
+    border: none;
+    margin-top: 24px;
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+}
+
+

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Roady Load Survey Form</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+       <h1 id="title"><span>Roady Load</span> Survey Form</h1>
+       <p id="description">Thank you for taking the time to participate in our survey.</p>
+       <form id="survey-form">
+            <!--Name-->
+            <div>
+                <label id="name-label" for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+            
+            <!--Email-->
+            <div>
+                <label id="email-label" for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            
+            <!--Age-->
+            <div>
+                <label id="number-label" for="age">Age</label>
+                <input type="number" id="number" name="age" placeholder="Age" min="18" max="110">
+            </div>
+            
+            <!--Job industry dropdown-->
+            <div>
+                <label for="dropdown">Which option best describe your current job?</label>
+                <select name="job" id="dropdown">
+                    <option value="">Select one job industry</option>
+                    <option value="1">Technology</option>
+                    <option value="2">Healthcare</option>
+                    <option value="3">Finance</option>
+                    <option value="4">Education</option>
+                    <option value="5">Manufacturing</option>
+                    <option value="6">Retail</option>
+                    <option value="7">Transportation and Logistics</option>
+                    <option value="8">Government and Public Services</option>
+                    <option value="9">Others</option>
+                </select>
+            </div>
+            
+            <!--Car type dropdown-->
+            <div>
+                <label for="car-type">Which kind of vehicle do you have?</label>
+                <select name="car-type" id="car-type">
+                    <option value="">Select vehicle type</option>
+                    <option value="1">Fuel Vehicle</option>
+                    <option value="2">Electric Vehicle</option>
+                    <option value="3">Fuel Vehicle and Electric Vehicle</option>
+                    <option value="4">Others</option>
+                </select>
+            </div>
+            
+
+            <!--willing-to-buy radio-->
+            <div>
+                <p>Will you consider buying an electric vehicle?</p>
+            
+                <div class="radio-checkbox">
+                    <input type="radio" id="yes" name="willing-to-buy" value="yes" checked>
+                    <label for="yes" class="inline">Yes, I will.</label>
+                </div>
+
+                <div class="radio-checkbox">
+                    <input type="radio" id="no" name="willing-to-buy" value="no">
+                    <label for="no" id="test" class="inline">No, I won't.</label>
+                </div>
+                
+                <div class="radio-checkbox">
+                    <input type="radio" id="not-sure" name="willing-to-buy" value="not-sure">
+                    <label for="not-sure" class="inline">Not sure.</label>
+                </div>
+                
+            </div>
+
+
+            <!--improvement checkbox-->
+            <div>
+                <p>What would you like to see improved for our electric vehicle? (Check all that apply)</p>
+                
+                <div class="radio-checkbox">
+                    <input type="checkbox" id="range anxiety" name="improvement" value="range anxiety">
+                    <label for="range anxiety">Range Anxiety</label>
+                </div>
+                
+                <div class="radio-checkbox">
+                    <input type="checkbox" id="charging infrastructure" name="improvement" value="charging infrastructure">
+                    <label for="charging infrastructure">Charging Infrastructure</label>
+                </div>
+                
+                <div class="radio-checkbox">
+                    <input type="checkbox" id="charging time" name="improvement" value="charging time">
+                    <label for="charging time">Charging Time</label>
+                </div>
+                
+                <div class="radio-checkbox">
+                    <input type="checkbox" id="battery life and degradation" name="improvement" value="battery life and degradation">
+                    <label for="battery life and degradation">Battery Life and Degradation</label>
+                </div>
+                
+                <div class="radio-checkbox">
+                    <input type="checkbox" id="initial cost" name="improvement" value="initial cost">
+                    <label for="initial cost">Initial Cost</label>
+                </div>
+
+                <div class="radio-checkbox">
+                    <input type="checkbox" id="performance in extreme weather" name="improvement" value="performance in extreme weather">
+                    <label for="performance in extreme weather">Performance in Extreme Weather</label>
+                </div>
+                     
+                <div class="radio-checkbox">
+                    <input type="checkbox" id="resale value" name="improvement" value="resale value">
+                    <label for="resale value">Resale Value</label>
+                </div>
+                
+                <div class="radio-checkbox">
+                    <input type="checkbox" id="maintenance and repairs" name="improvement" value="maintenance and repairs">
+                    <label for="maintenance and repairs">Maintenance and Repairs</label>
+                </div>
+                
+                <div class="radio-checkbox">
+                    <input type="checkbox" id="others" name="improvement" value="others">
+                    <label for="others">Others</label>
+                </div>
+            </div>
+
+            <!--comment textarea-->
+            <div>
+                <label for="comment">Any comments or suggestions?</label>
+                <textarea name="comment" id="comment" rows="3" cols="30" placeholder="Enter your comment here..."></textarea>
+            </div>
+            
+            <!--submit button-->
+            <div>
+                <label for="submit"></label>
+                <input type="submit" id="submit" value="Submit">
+            </div>
+            
+       </form> 
+    </body>
+</html>
