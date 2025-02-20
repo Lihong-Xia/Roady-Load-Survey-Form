@@ -1,4 +1,4 @@
-# an electric vehicle survey form
+# An Electric Vehicle Survey Form
 
 This is a survey form designed for freeCodeCamp Certificate-[Responsive Web Design Certification](https://www.freecodecamp.org/learn/2022/responsive-web-design/). In this certification, you'll learn the languages that developers use to build webpages: HTML for content, and CSS for design. 
 
@@ -73,8 +73,8 @@ User Stories:
 
 ### Links
 
-- Solution URL:
-- Live Site URL:
+- Solution URL: https://github.com/Lihong-Xia/Roady-Load-Survey-Form
+- Live Site URL: https://lihong-xia.github.io/Roady-Load-Survey-Form/
 
 ## My process
 
